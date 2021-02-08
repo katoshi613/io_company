@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
+<head >
   <meta charset="UTF-8">
   <title>Webサイトのタイトル</title>
   <meta name="description" content="ページの紹介文">
@@ -8,25 +8,37 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" rel="stylesheet">
 </head>
 
 <!-- ここからサイト本文 -->
 <body>
   <!-- ヘッダー -->
-  <header>
+  <header class="page-header">
     <ul style="list-style-type: none">
       <!-- list-style-type: none or list-style-type: decimal-leading-zero -->
-      <li>PORTFOLIO</li>
-      <li>CONTACT</li>
-      <li>HOME</li>
-      <li>DREAME</li>
-      <li>SKILLS</li>
+      <li><a href="#portfolio">PORTFOLIO</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#dreame">DREAME</a></li>
+      <li><a href="#skills">SKILLS</a></li>
     </ul>
   </header>
   <!-- メイン -->
   <main>
-    メイン部分
+    <div id="home">
+      <p>home</p>
+    </div>
+    <div id="dreame">
+      <p>dreame</p>
+    </div>
+    <div id="skills">
+      <p>skills</p>
+    </div>
+    <div id="portfolio">
+      <p>portfolio</p>
+    </div>
   </main>
   <!-- フッター -->
   <footer>
