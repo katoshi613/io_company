@@ -1,0 +1,6 @@
+#home {
+  border: 1px solid var(--濃いグレー（ワイヤーフレーム用）);
+  background: transparent url('img/トップ画面.png') 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 0.39;
+ }
