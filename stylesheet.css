@@ -1,28 +1,106 @@
+
+/* --------------   IO　HOMEPAGE CSS   -------------- */
+
+html{
+    width: 100%;
+    height: 100%;
+    background-color: cadetblue;
+}
+/* ---   初期設定   --- */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box
+}
+p {
+  line-height: 0.5;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+/* -----------------   以下HOMEPAGE本体編集部分   ----------------- */
+body {
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',"YuGothic",'Yu Gothic','メイリオ'," Meiryo",'ＭＳ Ｐゴシック','MS PGothic';
+    background-color: #f3f3f3;
+    color: #333;
+    margin-right: auto;
+    margin-left : auto;
+    width: 100%;
+    font-size:62.5%;
+}
+
+
+/* ---   ヘッダー　ナビゲーションメニュー   --- */
+header.page-header {
+    background-color: white;
+    opacity: .5;
+    width: 100%;
+    height: 1740px;
+
+}
+
 .navi {
-    /* Layout */
+    background-color: orange;
+    opacity: .5;
+    width: 300px;
+    height: 335px;
+    /*---   画面上に固定   ---*/
+    position: fixed;
+    top: 20px;
     left: 40px;
-    width: 250px;
-    height: 285px;
-    /* UI */
+    z-index: 10;/*--   要素重なりを防止   --*/
+    /*----------------*/
+    /* ----   Flexbox   --- */
     display: flex;
     flex-direction: column;
-    justify-content: space-between top: 1820px;
-    opacity: 1;
+    justify-content: space-around;
+    /* -------------- */
 }
 
-.navi li{
-
+.navi li {
+    background-color: #F3F3F3;
+    opacity: .8;
+    border: 1px solid;
+    width: 265px;
+    margin: 0 auto;
 }
 
-#home {
-    /* Layout */
-    top: 0px;
-    left: 0px;
-    width: 1440px;
-    height: 700px;
-    /* UI */
-    border: 1px solid var(--濃いグレー（ワイヤーフレーム用）);
-    background: transparent url('img/トップ画面.png') 0% 0% no-repeat padding-box;
-    border: 1px solid #707070;
-    opacity: 0.39;
+.navi li a {
+    font-size: 2.8rem;
+    color: #030303;
+    display: block;
+    text-align: center;
+}
+/* ---   各リンク文字のデコレーションのみで   ---*/
+/* ---   ナビメニューは完成する   ---*/
+/* ---   クリック時のアニメーションや、CSSの追加の検討   ---*/
+
+
+
+
+/* ---   共有コンテンツ指定   --- */
+main div.contents{
+    background-color: darkseagreen;
+    width: 100%;
+    height: 350px;
+}
+
+
+
+
+@media screen and (min-width:480px) {
+    /*　画面サイズが480pxからはここを読み込む　*/
+}
+@media screen and (min-width:768px) and ( max-width:1024px) {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+
+}
+@media screen and (min-width:1024px) {
+    /*　画面サイズが1024pxからはここを読み込む　*/
+
 }
