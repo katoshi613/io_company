@@ -5,9 +5,12 @@
     <title>Webサイトのタイトル</title>
     <meta name="description" content="ページの紹介文">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&family=ZCOOL+QingKe+HuangYou&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css" rel="stylesheet">
 </head>
@@ -32,44 +35,84 @@
 
         <!-- HOME PAGE CONTENTS -->
         <div id="home" class="contents">
-            <p>home</p>
+            <img src=""><!-- HOME IMAGE -->
         </div>
 
         <!-- DREAM PAGE CONTENTS -->
         <div id="dream" class="contents">
-            <img src=""><!-- DREAM -->
-            <img src=""><!-- FACERIG -->
-            <p id="introduction">dreame</p><!-- INTRODUCTION -->
+            <h1><span id="Dmax">D</span>ream</h1>
+            <div class="profile">
+                <div class="myicon">
+                    <img src="img/透過.png" alt="">
+                </div>
+                <div class="text">
+                    <p>初めまして。私はイオです。　　　　　　　　　　　　　　　　
+                        <br>好きな食べ物は、赤福もちです。</p>
+                </div>
+            </div>
         </div>
 
         <!-- SKILLS PAGE CONTENTS -->
         <div id="skills" class="contents">
-            <img src=""><!-- SKILLS -->
-            <div class="language">HTML&CSS</div>
-            <div class="language">Javascript</div>
-            <div class="language">PHP</div>
-            <div class="language">C#</div>
-            <div class="language">sample-1</div>
-            <div class="language">sample-2</div>
-            <p>skills</p>
+            <h1><span id="Smax">S</span>kills</h1>
+            <div class="skill-icon">
+                <div id="html" class="language">
+                    <span class="lang-text">HTML&CSS</span>
+                    <span class="lang-text">GOAL</span>
+                </div>
+                <div id="jav" class="language">
+                    <span class="lang-text">Javascript</span>
+                    <span class="lang-text">GOAL</span>
+                </div>
+                <div id="php" class="language">
+                    <span class="lang-text">PHP</span>
+                    <span class="lang-text">GOAL</span>
+                </div>
+                <div id="c#" class="language">
+                    <span class="lang-text">C#</span>
+                    <span class="lang-text">GOAL</span>
+                </div>
+                <div id="sam1" class="language">
+                    <span class="lang-text">sample-1</span>
+                    <span class="lang-text">GOAL</span>
+                </div>
+                <div id="sam2" class="language">
+                    <span class="lang-text">sample-2</span>
+                    <span class="lang-text">GOAL</span>
+                </div>
+            </div>
         </div>
+        <script>
+            $(function () {
+                $('.language').on('click', function (event) {
+                    event.preventDefault();
+                    $(this).toggleClass('active');
+                });
+            });
+        </script>
 
         <!-- PORTFOLIO PAGE CONTENTS -->
         <div id="portfolio" class="contents">
-            <img src=""><!-- PORTFOLIO -->
-            <div class="p-site">coffee cafe shop site</div>
-            <div class="p-site">car corporate site</div>
-            <div class="p-site">game site-1</div>
-            <div class="p-site">game site-2</div>
-            <div class="p-site">coffee cafe shop site</div>
-            <div class="p-site">car corporate site</div>
-            <div class="p-site">game site-1</div>
-            <div class="p-site">game site-2</div>
-            <p>portfolio</p>
+            <h1><span id="Pmax">P</span>ortfolio</h1>
+
+            <div class="portfolio-contents">
+                <img src=""><!-- PORTFOLIO -->
+                <div class="p-site">coffee cafe shop site</div>
+                <div class="p-site">car corporate site</div>
+                <div class="p-site">game site-1</div>
+                <div class="p-site">game site-2</div>
+                <div class="p-site">coffee cafe shop site</div>
+                <div class="p-site">car corporate site</div>
+                <div class="p-site">game site-1</div>
+                <div class="p-site">game site-2</div>
+                <p>portfolio</p>
+            </div>
         </div>
 
         <!-- CONTACT -->
         <div id="contact" class="contents">
+            <h1><span id="Cmax">C</span>ontact</h1>
+
             <form action="" method="post">
 
                 <div>
